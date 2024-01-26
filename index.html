@@ -43,6 +43,7 @@
           function smoothScroll(event, sectionId) {
             event.preventDefault();
             const section = document.querySelector(sectionId);
+            section.style.paddingTop = '60px';
             section.scrollIntoView({ behavior: 'smooth' });
           }
         </script>
@@ -1325,12 +1326,9 @@
         </a>
       </div>
       <div class="diamond-container">
-        <div class="section-five standard-width">
+        <div id="ecosystem-section" class="section-five standard-width">
           <img src="./img/Ecosystem.png" alt="" />
-          <div id="ecosystem-section" class="section-five standard-width">
-            <img src="./img/Ecosystem.png" alt="" />
-            <h4>Ecosystem</h4>
-          </div>
+          <h4>Ecosystem</h4>
           <p>Explore a decentralized universe of limitless possibilities</p>
         </div>
         <div class="square-line-container">
