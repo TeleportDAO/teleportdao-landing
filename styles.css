@@ -1453,10 +1453,6 @@ body::-webkit-scrollbar {
         height: 30vh;
     }
 
-    .tile-img-holder7.four>img {
-
-    }
-
     .tiles-h4 {
         color: var(--White, #FFF);
         text-align: center;
