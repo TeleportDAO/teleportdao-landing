@@ -134,6 +134,111 @@ body::-webkit-scrollbar {
     opacity: 1;
 }
 
+#glow-vertical-line-section, #glow-horizontal-line-section {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#animation-section-parent {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    width: 110vw;
+    height: 90vh;
+    border-bottom: 1px solid gray;
+}
+
+#animation-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    gap: 1px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.line-horizontal {
+    position: relative;
+    height: 1px;
+    width: 100%;
+}
+
+.mini-line-horizontal {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 1px;
+
+    /*-webkit-box-shadow: 0px 0px 81px 3px yellow;*/
+    /*-moz-box-shadow: 0px 0px 81px 3px yellow;*/
+    /*box-shadow: 0px 0px 20px 40px yellow;*/
+    opacity: 0;
+    transition: 2s;
+
+    animation-name: move-mini-line-horizontal;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move-mini-line-horizontal {
+    from {
+        left: -5%;
+    }
+
+    to {
+        left: 95%;
+    }
+}
+
+.line-vertical {
+    position: relative;
+    height: 100%;
+    width: 1px;
+}
+
+.mini-line-vertical {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+
+    opacity: 0;
+    transition: 2s;
+
+    animation-name: move-mini-line-vertical;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    -webkit-box-shadow: 0px 0px 81px 3px red;
+    -moz-box-shadow: 0px 0px 81px 3px red;
+    box-shadow: 0px 0px 20px 40px red;
+}
+
+@keyframes move-mini-line-vertical {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+
+.animation-box {
+    background: #1A1A1A;
+}
+
+.animation-box:hover {
+    background: #262626;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -255,6 +360,7 @@ body::-webkit-scrollbar {
 }
 
 .hero-logos-container {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
