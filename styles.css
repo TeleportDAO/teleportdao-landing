@@ -684,7 +684,7 @@ body::-webkit-scrollbar {
     display: grid;
     place-content: center;
     width: 514px;
-    height: 373px;
+    height: auto;
 }
 
 .tiles-seven .tile-img-holder7.one,
@@ -829,7 +829,7 @@ body::-webkit-scrollbar {
     width: fit-content;
     border-radius: 32px;
     margin: 80px auto;
-    background-image: linear-gradient(180deg, #3a7a1fc7 0%, rgba(120, 255, 57, 0.226) 100%);
+    background-image: linear-gradient(180deg, #356C1C 0%, rgba(120, 255, 57, 0.226) 100%);
     padding: 1px;
 }
 
@@ -988,7 +988,8 @@ body::-webkit-scrollbar {
     /* 24px */
     text-decoration-line: underline;
 }
-.gapper-80{
+
+.gapper-80 {
     height: 80px;
 }
 
@@ -997,9 +998,10 @@ body::-webkit-scrollbar {
         display: none;
     }
 
-    .gapper-80{
+    .gapper-80 {
         height: 0px;
     }
+
     .dont-show-on-desktop {
         display: block;
     }
@@ -1281,7 +1283,7 @@ body::-webkit-scrollbar {
 
     .box {
         display: flex;
-        width: 100%;
+        width: calc(90vw - 2px);
         height: 100%;
         flex-direction: column;
         padding: 1.5rem;
@@ -1377,8 +1379,6 @@ body::-webkit-scrollbar {
     .tiles-six .tile-container-six-four .tile-four,
     .tiles-six .tile-container-six-center .tile-center,
     .tiles-seven .tile-container-seven-center .tile-center {
-        width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1449,8 +1449,9 @@ body::-webkit-scrollbar {
     .tile-img-holder.four,
     .tile-img-holder7.two,
     .tile-img-holder7.four {
-        width: 100%;
-        height: 30vh;
+        width: 90vw;
+        max-width: 90vw;
+        height: auto;
     }
 
     .tiles-h4 {
@@ -1500,7 +1501,7 @@ body::-webkit-scrollbar {
     .section-seven-container {
         padding-bottom: 16px;
     }
-    
+
     .last-section-border-gradient {
         height: auto;
         margin: 64px auto;
@@ -1535,9 +1536,9 @@ body::-webkit-scrollbar {
         margin: 2rem 0 0 0;
     }
 
-    .social-media>div>svg {
-        width: 60px;
-        height: 60px;
+    .social-media>a>div>svg {
+        width: 64px;
+        height: 64px;
     }
 
     .social-media svg {
