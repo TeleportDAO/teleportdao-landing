@@ -1,4 +1,5 @@
 const animationSection = document.getElementById("animation-section")
+const fadeHero = document.getElementById("fade-hero")
 const glowVerticalLineSection = document.getElementById("glow-vertical-line-section")
 const glowHorizontalLineSection = document.getElementById("glow-horizontal-line-section")
 
@@ -10,12 +11,25 @@ const verticalLinesNumber = Math.floor(sectionWidth / boxWidth) - 1
 const horizontalLinesNumber = Math.floor(sectionHeight / boxHeight) + 1
 
 const createBoxes = () => {
+
+  console.log("fadeHero", fadeHero)
   for (let i = 0; i < 300; i++) {
-    const animationBox = document.createElement('div')
-    animationBox.className = 'animation-box'
-    animationBox.style.width = boxWidth + "px"
-    animationBox.style.height = boxHeight + "px"
-    animationSection.appendChild(animationBox)
+    const innerBox = document.createElement('div')
+    const fadeBox = document.createElement('div')
+    
+    innerBox.style.width = boxWidth + "px"
+    innerBox.style.height = boxHeight + "px"
+    innerBox.style.background = "#1A1A1A"
+    innerBox.style.borderRadius = "6px"
+
+    fadeBox.className = 'animation-box'
+    fadeBox.style.width = boxWidth + "px"
+    fadeBox.style.height = boxHeight + "px"
+
+    animationSection.appendChild(innerBox)
+
+    fadeHero.appendChild(fadeBox)
+
   }
 }
 
@@ -24,7 +38,7 @@ const createVerticalLines = () => {
     const box = document.createElement('div')
     const line = document.createElement('div')
     const miniLine = document.createElement('div')
-
+  
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
     // Styles
