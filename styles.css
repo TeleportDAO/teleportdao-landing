@@ -134,6 +134,18 @@ body::-webkit-scrollbar {
     opacity: 1;
 }
 
+#fade-hero {
+    position: absolute;
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 110vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(5,5,5,1) 0%, rgba(26,26,26,0.5018382352941176) 42%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+}
+
 #glow-vertical-line-section, #glow-horizontal-line-section {
     display: flex;
     flex-wrap: wrap;
@@ -147,8 +159,7 @@ body::-webkit-scrollbar {
     position: absolute;
     z-index: 0;
     width: 110vw;
-    height: 90vh;
-    border-bottom: 1px solid gray;
+    height: 100vh;
 }
 
 #animation-section {
@@ -160,6 +171,16 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
+}
+
+.animation-box {
+    transition: all 0.5s;
+    border-radius: 6px;
+    background: unset;
+}
+
+.animation-box:hover {
+    background: #262626;
 }
 
 .line-horizontal {
@@ -231,14 +252,6 @@ body::-webkit-scrollbar {
     }
 }
 
-.animation-box {
-    background: #1A1A1A;
-}
-
-.animation-box:hover {
-    background: #262626;
-}
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -252,6 +265,8 @@ body::-webkit-scrollbar {
 }
 
 .hero-white-title {
+    position: relative;
+    z-index: 2;
     text-align: center;
     font-family: Outfit;
     font-size: 64px;
@@ -266,6 +281,8 @@ body::-webkit-scrollbar {
 }
 
 .hero-green-title {
+    position: relative;
+    z-index: 2;
     text-align: center;
     font-family: Outfit;
     font-size: 64px;
@@ -281,6 +298,8 @@ body::-webkit-scrollbar {
 }
 
 .p-text-content {
+    position: relative;
+    z-index: 2;
     color: var(--White, #FFF);
     text-align: center;
     font-family: Outfit;
@@ -296,6 +315,8 @@ body::-webkit-scrollbar {
 }
 
 .hero-green-button {
+    position: relative;
+    z-index: 2;
     color: var(--Black, #050505);
     font-family: Outfit !important;
     font-size: 22px;
@@ -360,7 +381,8 @@ body::-webkit-scrollbar {
 }
 
 .hero-logos-container {
-    z-index: 1;
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
