@@ -40,7 +40,6 @@ body {
     height: 100vh;
     width: 100vw;
     max-width: 100vw;
-    background-image: url('./img/bodybg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -148,7 +147,7 @@ body::-webkit-scrollbar {
     overflow: hidden;
     width: 110vw;
     height: 100vh;
-    background: linear-gradient(0deg, #050505 0%, rgba(26,26,26,0.32816876750700286) 70%, rgba(255,255,255,0) 100%),
+    background: linear-gradient(0deg, rgba(5,5,5,0.958420868347339) 0%, rgba(26,26,26,0.32816876750700286) 66%, rgba(255,255,255,0) 100%),
     linear-gradient(45deg, rgba(255,255,255,0) 2%, rgba(255,255,255,0.13489145658263302) 21%, rgba(255,255,255,0.12368697478991597) 41%, rgba(255,255,255,0) 58%,
     rgba(255,255,255,0) 100%), linear-gradient(270deg, rgba(5,5,5,0.7651435574229692) 0%, rgba(26,26,26,0.2497373949579832) 66%, rgba(255,255,255,0) 100%);
     z-index: 1;
