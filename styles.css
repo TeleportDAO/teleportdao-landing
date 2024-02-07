@@ -60,6 +60,7 @@ body::-webkit-scrollbar {
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     margin-top: 2rem;
     margin-left: calc(50vw - 640px);
     position: fixed;
@@ -134,7 +135,8 @@ body::-webkit-scrollbar {
     opacity: 1;
 }
 
-#glow-vertical-line-section, #glow-horizontal-line-section {
+#glow-vertical-line-section,
+#glow-horizontal-line-section {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
