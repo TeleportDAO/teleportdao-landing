@@ -3,13 +3,12 @@
 <rect x="120.66" y="33.9194" width="83.1265" height="84.04" fill="url(#pattern0)"/>
 <g style="mix-blend-mode:plus-darker" filter="url(#filter0_f_534_1038)">
 <mask id="mask0_534_1038" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="28" y="-2" width="275" height="211">
-<g style="mix-blend-mode:plus-darker">
- <defs>
-        <linearGradient id="uniqueGradientId" x1="165.483" y1="-1.9585" x2="165.483" y2="208.141" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#78FF39" stop-opacity="0"/>
-            <stop offset="1" stop-color="#78FF39"/>
-        </linearGradient>
-    </defs>
+<!-- <g style="mix-blend-mode:plus-darker"> -->
+<g>
+    <linearGradient id="uniqueGradientId" x1="165.483" y1="-1.9585" x2="165.483" y2="208.141" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#78FF39" stop-opacity="0"/>
+        <stop offset="1" stop-color="#78FF39"/>
+    </linearGradient>
     <path d="M28.0045 -1.9585L144.624 208.141H192.505L302.961 -1.9585H28.0045Z" fill="url(#uniqueGradientId)"/>
 </g>
 </mask>
