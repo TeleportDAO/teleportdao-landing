@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+.sale-bg{
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+    overflow: hidden; /* Prevents overflow of the container */
+    /* background-image: url('./img/sale.jpg');
+    background-repeat: no-repeat; */
+    background-size: cover;
+    cursor: pointer;
+}
+.sale-bg img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
 .standard-margin {
     margin: 1.5rem 3rem 0 3rem;
 }
@@ -44,6 +60,7 @@ body {
     background-size: cover;
     background-position: top;
     font-family: 'Outfit', sans-serif !important;
+    padding-top: 25px;
 }
 
 body::-webkit-scrollbar {
@@ -61,7 +78,7 @@ body::-webkit-scrollbar {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    margin-top: 2rem;
+    margin-top: calc(2rem + 120px);
     margin-left: calc(50vw - 640px);
     position: fixed;
     z-index: 10;
