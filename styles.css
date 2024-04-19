@@ -60,7 +60,7 @@ body {
     background-size: cover;
     background-position: top;
     font-family: 'Outfit', sans-serif !important;
-    padding-top: 25px;
+    /* padding-top: 25px; */
 }
 
 body::-webkit-scrollbar {
@@ -78,7 +78,8 @@ body::-webkit-scrollbar {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    margin-top: calc(2rem + 120px);
+    /* margin-top: calc(2rem + 120px); */
+     margin-top: calc(2rem);
     margin-left: calc(50vw - 640px);
     position: fixed;
     z-index: 10;
