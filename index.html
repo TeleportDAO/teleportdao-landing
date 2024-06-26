@@ -30,10 +30,10 @@
     <title>TeleportDAO</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <title>TeleportDAO</title>
+    <script src="mixpanel.js"></script>
   </head>
   <body>
-    <!-- <a class="sale-bg"  href="https://coinlist.co/teleportdao"
-    target="_blank" ><img  src="./img/sale.jpg" alt="sale" /></a> -->
+
     <div id="openning-loading" class="opening-black"></div>
     <!-- DESKTOP NAVBAR -->
     <header class="header standard-width">
@@ -57,21 +57,21 @@
             section.scrollIntoView({ behavior: "smooth" });
           }
         </script>
-        <a href="https://docs.teleportdao.xyz" class="navlinks" target="_blank"
+        <a href="https://docs.teleportdao.xyz" class="navlinks" target="_blank"  onclick="trackButtonClick('docsButton')"
           >Docs</a
         >
         <a
           href="#community-section"
           class="navlinks"
-          onclick="smoothScroll(event, '#community-section')"
+          onclick="smoothScroll(event, '#community-section')"  onclick="trackButtonClick('communityButton')"
           >Community</a
         >
-        <a href="https://blog.teleportdao.xyz" class="navlinks" target="_blank"
+        <a href="https://blog.teleportdao.xyz" class="navlinks" target="_blank"  onclick="trackButtonClick('blogButton')"
           >Blog</a
         >
       </nav>
-      <a href="https://explorer.teleportdao.xyz" target="_blank">
-        <button class="nav-button">Enter Explorer</button>
+      <a href="https://explorer.teleportdao.xyz" target="_blank"  onclick="trackButtonClick('explorerButton')">
+        <button class="nav-button" >Enter Explorer</button>
       </a>
     </header>
     <!-- MOBILE NAVBAR -->
@@ -122,20 +122,22 @@
         onclick="smoothScroll(event, '#ecosystem-section')"
         >Ecosystem</a
       >
-      <a href="https://docs.teleportdao.xyz" class="navlinks" target="_blank"
+      <a href="https://docs.teleportdao.xyz" class="navlinks" target="_blank"  onclick="trackButtonClick('docsButton')"
         >Docs</a
       >
       <a
         href="#community-section"
         class="navlinks"
         onclick="smoothScroll(event, '#community-section')"
+   
+        onclick="trackButtonClick('communityButton')"
         >Community</a
       >
-      <a href="https://blog.teleportdao.xyz" class="navlinks" target="_blank"
+      <a href="https://blog.teleportdao.xyz" class="navlinks" target="_blank"       onclick="trackButtonClick('blogButton')"
         >Blog</a
       >
-      <a href="https://explorer.teleportdao.xyz" target="_blank">
-        <button class="nav-button">Enter Explorer</button>
+      <a href="https://explorer.teleportdao.xyz" target="_blank"   onclick="trackButtonClick('explorerButton')">
+        <button class="nav-button" >Enter Explorer</button>
       </a>
     </div>
 
@@ -160,8 +162,8 @@
           protocol that provides an infrastructure for<br />
           developers to build cross-chain applications.
         </p>
-        <a class="hero-button-link" href="https://explorer.teleportdao.xyz" target="_blank">
-          <button class="hero-green-button">Enter Explorer</button>
+        <a class="hero-button-link" href="https://explorer.teleportdao.xyz" target="_blank" onclick="trackButtonClick('explorerButton')">
+          <button class="hero-green-button" >Enter Explorer</button>
         </a>
         <div class="hero-logos-container">
           <h4>Supported Chains</h4>
@@ -1365,6 +1367,8 @@
         <a
           href="https://github.com/TeleportDAO/audits/blob/main/reports/Quantstamp-Bitcoin-EVM.pdf"
           target="_blank"
+          
+          onclick="trackButtonClick('auditedButton')"
         >
           <img src="./img/audeitedby.png" alt="" />
         </a>
@@ -1531,8 +1535,8 @@
                 </div>
               </div>
             </div>
-            <a href="https://app.teleswap.xyz" target="_blank">
-              <button class="outlined-green-dark-button">
+            <a href="https://app.teleswap.xyz" target="_blank"        onclick="trackButtonClick('teleswapButton')">
+              <button class="outlined-green-dark-button" >
                 Launch TeleSwap
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1784,8 +1788,8 @@
                 </div>
               </div>
             </div>
-            <a href="https://teleordinal.xyz" target="_blank">
-              <button class="outlined-green-dark-button">
+            <a href="https://teleordinal.xyz" target="_blank"  onclick="trackButtonClick('teleordinalButton')">
+              <button class="outlined-green-dark-button" >
                 Launch TeleOrdinal<svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -1829,7 +1833,7 @@
                 TeleportDAO
               </p>
               <div class="social-media">
-                <a href="https://t.me/teleportdao_chat" target="_blank">
+                <a href="https://t.me/teleportdao_chat" target="_blank"  onclick="trackButtonClick('telegramButton')">
                   <div>
                     <svg
                       width="83"
@@ -1877,7 +1881,7 @@
                     </svg>
                   </div>
                 </a>
-                <a href="https://discord.com/invite/2mYJBB9bGR" target="_blank">
+                <a href="https://discord.com/invite/2mYJBB9bGR" target="_blank"  onclick="trackButtonClick('discordButton')">
                   <div class="">
                     <svg
                       width="83"
@@ -1925,7 +1929,7 @@
                     </svg>
                   </div>
                 </a>
-                <a href="https://twitter.com/Teleport_DAO" target="_blank">
+                <a href="https://twitter.com/Teleport_DAO" target="_blank"  onclick="trackButtonClick('twitterButton')">
                   <div class="">
                     <svg
                       width="83"
@@ -1986,6 +1990,8 @@
             <a
               href="https://www.linkedin.com/company/teleportdao/"
               target="_blank"
+       
+              onclick="trackButtonClick('linkedinButton')"
             >
               <div class="">
                 <svg
@@ -2003,7 +2009,7 @@
                 </svg>
               </div>
             </a>
-            <a href="https://discord.com/invite/2mYJBB9bGR" target="_blank">
+            <a href="https://discord.com/invite/2mYJBB9bGR" target="_blank"     onclick="trackButtonClick('discordButton')">
               <div class="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -2020,7 +2026,7 @@
                 </svg>
               </div>
             </a>
-            <a href="https://twitter.com/teleport_dao" target="_blank">
+            <a href="https://twitter.com/teleport_dao" target="_blank"   onclick="trackButtonClick('twitterdButton')">
               <div class="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -2043,9 +2049,9 @@
         <div class="right-side">
           <div>
             <p>RESOURCES</p>
-            <a href="https://docs.teleportdao.xyz/" target="_blank">Docs</a>
-            <a href="https://github.com/TeleportDAO" target="_blank">Github</a>
-            <a href="https://blog.teleportdao.xyz/" target="_blank">Blog</a>
+            <a href="https://docs.teleportdao.xyz/" target="_blank"  onclick="trackButtonClick('docsButton')">Docs</a>
+            <a href="https://github.com/TeleportDAO" target="_blank" onclick="trackButtonClick('githubButton')">Github</a>
+            <a href="https://blog.teleportdao.xyz/" target="_blank"  onclick="trackButtonClick('blogButton')">Blog</a>
           </div>
           <div>
             <p>LEGAL</p>
@@ -2097,5 +2103,11 @@
     const currentYear = new Date().getFullYear();
     const copyrightElement = document.getElementById("copyright");
     copyrightElement.textContent = `© ${currentYear} Teleport technologies Inc. All rights reserved.`;
+
+
+    //  document.getElementById('trackButton').addEventListener('click', function() {
+    //         trackButtonClick('trackButton', 'Home Page');
+    //     });
+
   </script>
 </html>
