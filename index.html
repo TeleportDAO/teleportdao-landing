@@ -14,8 +14,7 @@
       content="Connecting chains with the highest level of security & decentralization."
     />
     <meta property="og:image" content="./img/open-graph.png" />
-        
-            <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
     <meta property="og:url" content="https://teleportdao.xyz/" />
     <meta property="og:type" content="website" />
     <meta charset="UTF-8" />
@@ -30,9 +29,10 @@
       rel="stylesheet"
     />
     <title>TeleportDAO</title>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-    <title>TeleportDAO</title>
     <script src="mixpanel.js"></script>
+   
   </head>
   <body>
     <!-- <a class="sale-bg"  href="https://coinmarketcap.com/currencies/teleport-system-token"
@@ -2066,8 +2066,13 @@
       </div>
     </footer>
   </body>
+
   <script src="index.js"></script>
   <script>
+    if (window.self === window.top) {
+   } else {
+    document.documentElement.style.display = 'none';
+    }
     var animation = bodymovin.loadAnimation({
       container: document.getElementById("animation-one-container"),
       path: "animation4.json",
